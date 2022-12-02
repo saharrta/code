@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header CSS start  */
+.header_box {
+    width: 100%;
+    height: auto;
+    background-color: #082B59;
+    border-bottom: 0.6rem solid #D98555;
+}
+
+.header_content {
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.logo_box {
+    width: 50%;
+}
+
+.logo>img {
+    width: auto;
+    height: 8rem;
+}
+
+.nav_box {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_bar>ul {
+    width: 26rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+li {
+    color: white;
+    font-size: 23px;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #D98555;
+}
+/* Header CSS end  */
+
+
+/* Body content start  */
+.body_conyainer {
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+.content {
+    display: flex;
+    padding-top: 3rem
+}
+
+.content_text {
+    width: 52%;
+    margin-bottom: 1rem;
+}
+
+.content_text>p {
+   
+    padding-right: 3.5rem;
+    font-size: 19.2px;
+    line-height: 38.4px;
+    font-weight: 400;
+}
+
+.content_image {
+    width: 47%;
+    padding-right: 1rem;
+}
+
+.bgimage>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image_Large {
+    display: block;
+}
+
+.image_sm {
+    display: none;
+}
+
+.image_mobile {
+    display: none;
+}
+
+.button {
+    margin-top: 1rem;
+}
+
+.button>a {
+    padding: 0.6rem;
+    background-color: #59331D;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+}
+/* Body content end  */
+
+.bottom_full_image {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+
+/* Footer CSS start  */
+.footer{
+    background-color: #082B59;
+    margin-top: -4px;
+}
+.footer_content{
+    padding: 1rem;
+    
+}
+.para_one{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 19px;
+}
+.para_two{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 16px;
+}
+.social_link{
+    display: flex;
+    justify-content: center;
+}
+
+.social>i{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+/* Footer CSS end  */
+
+
+/* Media Query for responsive header  */
+@media screen and (max-width: 768px) {
+    .header_content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo_box {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_bar>ul {
+        width: 22rem;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .nav_bar>ul {
+       
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    li {
+        padding-top: 3rem;
+    }
+}
+/* Media Query for responsive header  */
+
+
+/* Media Query for responsive body content  */
+@media screen and (max-width: 768px) {
+    .image_Large {
+        display: none;
+    }
+
+    .image_sm {
+        display: block;
+    }
+
+    .image_mobile {
+        display: none;
+    }
+
+    .body_conyainer {
+        margin-top: 2rem;
+        padding: 0;
+        padding-left: 3rem;
+    }
+
+    .content_text {
+        width: 58%;
+    }
+
+    .content_text>p {
+        font-size: 19px;
+        padding-right: 1rem;
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .body_conyainer {
+        margin-top: 2rem;
+        padding: 0;
+        padding-left: 1rem;
+
+    }
+    .content_image {
+        width: 100%;
+    }
+
+    .image_Large {
+        display: none;
+    }
+
+    .image_sm {
+        display: none;
+    }
+
+    .image_mobile {
+        display: block;
+    }
+
+    .content_text {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        padding-top: 3rem;
+        flex-wrap: wrap;
+    }
+}
+/* Media Query for responsive body content  */
